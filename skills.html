@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =======================================================
+         BASIC PAGE SETTINGS
+    ======================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Skills - Cyber Security, Networking, Web Development">
+
+    <meta
+        name="keywords"
+        content="Skills, Cyber Security, Networking, HTML, CSS, JavaScript">
+
+    <meta
+        name="author"
+        content="Ejeh David Eniola">
+
+    <title>
+        Skills | Ejeh David Eniola | CyberFolio
+    </title>
+
+
+    <!-- =======================================================
+         GOOGLE FONTS
+    ======================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =======================================================
+         LUCIDE ICONS
+    ======================================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- =======================================================
+         CSS FILES
+    ======================================================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="hero.css">
+
+    <link rel="stylesheet" href="section.css">
+
+    <link rel="stylesheet" href="animation.css">
+
+    <link rel="stylesheet" href="theme.css">
+    
+    <link rel="stylesheet" href="dashboard.css">
+    
+    <link rel="stylesheet" href="responsive.css">
+    
+</head>
+
+<body>
+        <script src="main.js"></script>
+
+    <script src="clan-rain.js"></script>
+
+    <script src="easter-eggs.js"></script>
+    
+    <script>
+
+        lucide.createIcons();
+
+    </script>
+
+    <!-- =======================================================
+         SHINOBI SYMBOL RAIN
+    ======================================================== -->
+
+    <canvas id="clan-rain"></canvas>
+
+
+    <!-- =======================================================
+         MAIN WEBSITE
+    ======================================================== -->
+
+    <div id="app">
+        <!-- =======================================================
+             HEADER / NAVIGATION
+        ======================================================== -->
+
+        <header id="header">
+
+            <nav class="navbar container">
+
+                <!-- ==========================
+                     LOGO
+                =========================== -->
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-icon">
+                        ⚡
+                    </span>
+
+                    <span class="logo-text">
+
+                        EDE
+
+                    </span>
+
+                </a>
+
+
+                <!-- ==========================
+                     NAVIGATION LINKS
+                =========================== -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="skills.html" class="active">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terminal.html">
+                            Cyber Lab
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- ==========================
+                     NAVIGATION ACTIONS
+                =========================== -->
+
+                <div class="nav-actions">
+
+                    <!-- Theme Toggle -->
+
+                    <button
+                        id="theme-toggle"
+                        class="icon-btn"
+                        aria-label="Toggle Theme">
+
+                        <i data-lucide="moon"></i>
+
+                    </button>
+
+
+                    <!-- Resume Button -->
+
+                    <a
+                        href="assets/resume/Ejeh-David-Eniola-Resume.pdf"
+                        class="resume-btn"
+                        download>
+
+                        Resume
+
+                    </a>
+
+
+                    <!-- Mobile Menu -->
+
+                    <button
+                        id="menu-btn"
+                        class="icon-btn"
+                        aria-label="Open Navigation">
+
+                        <i data-lucide="menu"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+          <!-- =======================================================
+             SKILLS SECTION
+        ======================================================== -->
+
+        <section id="skills" class="skills">
+
+            <div class="container">
+
+                <!-- ==========================
+                     SECTION HEADER
+                =========================== -->
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        Skills
+
+                    </span>
+
+                    <h2>
+
+                        Cyber Arsenal
+
+                    </h2>
+
+                    <p>
+
+                        Every skill is another tool in my cybersecurity arsenal.
+                        I'm continuously learning, practicing, and improving to
+                        become a well-rounded security professional.
+
+                    </p>
+
+                </div>
+
+                <!-- ==========================
+                     SKILLS GRID
+                =========================== -->
+
+                <div class="skills-grid">
+
+                    <article class="skill-card fade-up">
+
+                        <i data-lucide="shield"></i>
+
+                        <h3>Cyber Security</h3>
+
+                        <p>Learning security fundamentals, risk management,
+                        vulnerability assessment, and defensive practices.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="75"></div>
+
+                            </div>
+
+                            <span>75%</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card fade-up">
+
+                        <i data-lucide="network"></i>
+
+                        <h3>Networking</h3>
+
+                        <p>Understanding computer networks, protocols,
+                        routing, switching and secure communication.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="70"></div>
+
+                            </div>
+
+                            <span>70%</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card fade-up">
+
+                        <i data-lucide="code-2"></i>
+
+                        <h3>HTML5</h3>
+
+                        <p>Building semantic, accessible and
+                        responsive web pages.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="90"></div>
+
+                            </div>
+
+                            <span>90%</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card fade-up">
+
+                        <i data-lucide="palette"></i>
+
+                        <h3>CSS3</h3>
+
+                        <p>Creating responsive layouts,
+                        animations and modern UI designs.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="85"></div>
+
+                            </div>
+
+                            <span>85%</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card fade-up">
+
+                        <i data-lucide="file-code"></i>
+
+                        <h3>JavaScript</h3>
+
+                        <p>Building interactive interfaces and
+                        dynamic web applications.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="65"></div>
+
+                            </div>
+
+                            <span>65%</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card fade-up">
+
+                        <i data-lucide="terminal"></i>
+
+                        <h3>Linux</h3>
+
+                        <p>Developing Linux command-line skills
+                        for cybersecurity and administration.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="60"></div>
+
+                            </div>
+
+                            <span>60%</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <p>&copy; 2026 Ejeh David Eniola. All rights reserved.</p>
+
+                <div class="footer-social">
+
+                    <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
