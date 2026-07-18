@@ -19,24 +19,14 @@ const skillBars = document.querySelectorAll(".skill-fill");
 const scrollIndicator = document.querySelector(".scroll-indicator");
 
 /*=========================================================
-    BOOT SCREEN - MINIMAL DELAY
+    BOOT SCREEN - REMOVED
 =========================================================*/
 
-window.addEventListener("load", () => {
+// Boot screen completely removed - hidden on page load
 
-    setTimeout(() => {
-
-        bootScreen.style.opacity = "0";
-
-        setTimeout(() => {
-
-            bootScreen.style.display = "none";
-
-        }, 300);
-
-    }, 800);
-
-});
+if(bootScreen){
+    bootScreen.style.display = "none";
+}
 
 /*=========================================================
     STICKY HEADER
