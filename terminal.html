@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =======================================================
+         BASIC PAGE SETTINGS
+    ======================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Cyber Lab - Interactive Security Terminal">
+
+    <meta
+        name="keywords"
+        content="Terminal, Cyber Lab, Interactive">
+
+    <meta
+        name="author"
+        content="Ejeh David Eniola">
+
+    <title>
+        Cyber Lab | Ejeh David Eniola | CyberFolio
+    </title>
+
+
+    <!-- =======================================================
+         GOOGLE FONTS
+    ======================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =======================================================
+         LUCIDE ICONS
+    ======================================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- =======================================================
+         CSS FILES
+    ======================================================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="hero.css">
+
+    <link rel="stylesheet" href="section.css">
+
+    <link rel="stylesheet" href="animation.css">
+
+    <link rel="stylesheet" href="theme.css">
+    
+    <link rel="stylesheet" href="dashboard.css">
+    
+    <link rel="stylesheet" href="responsive.css">
+    
+</head>
+
+<body>
+        <script src="main.js"></script>
+
+    <script src="clan-rain.js"></script>
+
+    <script src="terminal.js"></script>
+
+    <script src="easter-eggs.js"></script>
+    
+    <script>
+
+        lucide.createIcons();
+
+    </script>
+
+    <!-- =======================================================
+         SHINOBI SYMBOL RAIN
+    ======================================================== -->
+
+    <canvas id="clan-rain"></canvas>
+
+
+    <!-- =======================================================
+         MAIN WEBSITE
+    ======================================================== -->
+
+    <div id="app">
+        <!-- =======================================================
+             HEADER / NAVIGATION
+        ======================================================== -->
+
+        <header id="header">
+
+            <nav class="navbar container">
+
+                <!-- ==========================
+                     LOGO
+                =========================== -->
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-icon">
+                        ⚡
+                    </span>
+
+                    <span class="logo-text">
+
+                        EDE
+
+                    </span>
+
+                </a>
+
+
+                <!-- ==========================
+                     NAVIGATION LINKS
+                =========================== -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="skills.html">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terminal.html" class="active">
+                            Cyber Lab
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- ==========================
+                     NAVIGATION ACTIONS
+                =========================== -->
+
+                <div class="nav-actions">
+
+                    <!-- Theme Toggle -->
+
+                    <button
+                        id="theme-toggle"
+                        class="icon-btn"
+                        aria-label="Toggle Theme">
+
+                        <i data-lucide="moon"></i>
+
+                    </button>
+
+
+                    <!-- Resume Button -->
+
+                    <a
+                        href="assets/resume/Ejeh-David-Eniola-Resume.pdf"
+                        class="resume-btn"
+                        download>
+
+                        Resume
+
+                    </a>
+
+
+                    <!-- Mobile Menu -->
+
+                    <button
+                        id="menu-btn"
+                        class="icon-btn"
+                        aria-label="Open Navigation">
+
+                        <i data-lucide="menu"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            <!-- =======================================================
+             CYBER LAB / SECURITY TERMINAL
+        ======================================================== -->
+
+        <section id="terminal" class="terminal-section">
+
+            <div class="container">
+
+                <!-- ==========================
+                     SECTION HEADER
+                =========================== -->
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        Cyber Lab
+
+                    </span>
+
+                    <h2>
+
+                        Security Terminal
+
+                    </h2>
+
+                    <p>
+
+                        Welcome to my interactive terminal. Explore my portfolio
+                        by typing commands below. Curious visitors may even
+                        discover a few hidden secrets.
+
+                    </p>
+
+                </div>
+
+                <!-- ==========================
+                     TERMINAL WINDOW
+                =========================== -->
+
+                <div class="terminal-window fade-up">
+
+                    <div class="terminal-header">
+
+                        <div class="terminal-buttons">
+
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+
+                        </div>
+
+                        <span class="terminal-title">
+
+                            secure-terminal@cyberfolio
+
+                        </span>
+
+                    </div>
+
+                    <div id="terminal-output" class="terminal-output">
+
+<pre>
+======================================================
+ CyberFolio Security Terminal v4.0
+
+ Type "help" to begin.
+
+======================================================
+</pre>
+
+                    </div>
+
+                    <div class="terminal-input-area">
+
+                        <span class="prompt">
+
+                            C:\CyberFolio>
+
+                        </span>
+
+                        <input
+                            type="text"
+                            id="terminal-input"
+                            autocomplete="off"
+                            spellcheck="false"
+                            placeholder="Type a command...">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <p>&copy; 2026 Ejeh David Eniola. All rights reserved.</p>
+
+                <div class="footer-social">
+
+                    <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
