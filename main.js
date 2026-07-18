@@ -17,8 +17,9 @@ const typingText = document.querySelector(".typing-text");
 const skillBars = document.querySelectorAll(".skill-fill");
 
 const scrollIndicator = document.querySelector(".scroll-indicator");
+
 /*=========================================================
-    BOOT SCREEN
+    BOOT SCREEN - MINIMAL DELAY
 =========================================================*/
 
 window.addEventListener("load", () => {
@@ -31,11 +32,12 @@ window.addEventListener("load", () => {
 
             bootScreen.style.display = "none";
 
-        }, 700);
+        }, 300);
 
-    }, 3000);
+    }, 800);
 
 });
+
 /*=========================================================
     STICKY HEADER
 =========================================================*/
@@ -55,6 +57,7 @@ window.addEventListener("scroll", () => {
     }
 
 });
+
 /*=========================================================
     MOBILE MENU
 =========================================================*/
@@ -64,6 +67,7 @@ menuButton.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 
 });
+
 /*=========================================================
     TYPING EFFECT
 =========================================================*/
@@ -125,6 +129,7 @@ function typingAnimation(){
 }
 
 typingAnimation();
+
 /*=========================================================
     SKILL BARS
 =========================================================*/
@@ -150,6 +155,7 @@ skillBars.forEach(bar=>{
     skillObserver.observe(bar);
 
 });
+
 /*=========================================================
     FADE UP
 =========================================================*/
@@ -175,6 +181,7 @@ fadeElements.forEach(item=>{
     fadeObserver.observe(item);
 
 });
+
 /*=========================================================
     SCROLL INDICATOR
 =========================================================*/
@@ -194,6 +201,7 @@ window.addEventListener("scroll", ()=>{
     }
 
 });
+
 /*=========================================================
     DARK/LIGHT MODE
 =========================================================*/
@@ -203,6 +211,7 @@ themeButton.addEventListener("click", ()=>{
     document.body.classList.toggle("light-mode");
 
 });
+
 /*=========================================================
     INITIALIZE
 =========================================================*/
