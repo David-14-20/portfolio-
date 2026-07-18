@@ -1,0 +1,309 @@
+/*=========================================================
+    GOOGLE FONT FALLBACKS
+=========================================================*/
+
+:root{
+
+    /*=========================
+        COLORS
+    =========================*/
+
+    --bg-primary:#050816;
+    --bg-secondary:#0b1120;
+    --bg-card:rgba(255,255,255,.05);
+
+    --primary:#00CFFF;
+    --secondary:#2D6A4F;
+    --accent:#E63946;
+    --purple:#7B2CBF;
+
+    --white:#F8FAFC;
+    --gray:#94A3B8;
+
+    --border:rgba(255,255,255,.10);
+
+    /*=========================
+        TYPOGRAPHY
+    =========================*/
+
+    --heading-font:"Orbitron",sans-serif;
+
+    --body-font:"Poppins",sans-serif;
+
+    --code-font:"JetBrains Mono",monospace;
+
+    /*=========================
+        SHADOWS
+    =========================*/
+
+    --shadow-sm:0 4px 10px rgba(0,0,0,.25);
+
+    --shadow-md:0 10px 30px rgba(0,0,0,.35);
+
+    --shadow-lg:0 20px 60px rgba(0,0,0,.45);
+
+    /*=========================
+        TRANSITIONS
+    =========================*/
+
+    --transition:.35s ease;
+
+    --radius:20px;
+
+}
+
+/*=========================================================
+    RESET
+=========================================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg-primary);
+
+    color:var(--white);
+
+    font-family:var(--body-font);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+/*=========================================================
+    IMAGES
+=========================================================*/
+
+img{
+
+    display:block;
+
+    width:100%;
+
+    max-width:100%;
+
+}
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+input,
+textarea{
+
+    outline:none;
+
+    border:none;
+
+    font-family:inherit;
+
+}
+/*=========================================================
+    HEADINGS
+=========================================================*/
+
+h1,
+h2,
+h3,
+h4{
+
+    font-family:var(--heading-font);
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+h1{
+
+    font-size:4rem;
+
+}
+
+h2{
+
+    font-size:2.8rem;
+
+}
+
+h3{
+
+    font-size:1.5rem;
+
+}
+
+p{
+
+    color:var(--gray);
+
+}
+
+.section-header{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:0 auto 70px;
+
+}
+
+.section-tag{
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:.9rem;
+
+    display:inline-block;
+
+    margin-bottom:15px;
+
+}
+/*=========================================================
+    CONTAINERS
+=========================================================*/
+
+.container{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:120px 0;
+
+}
+
+main{
+
+    position:relative;
+
+    z-index:2;
+
+}
+/*=========================================================
+    BUTTONS
+=========================================================*/
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:15px 32px;
+
+    border-radius:999px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:#000;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 30px var(--primary);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--primary);
+
+    color:var(--white);
+
+    background:transparent;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:#000;
+
+}
+/*=========================================================
+    SCROLLBAR
+=========================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--bg-secondary);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
